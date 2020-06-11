@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import Navigation from "./Navigation"
 
@@ -51,23 +51,24 @@ const StyledBtn = styled.button`
   }
 `
 
-const MenuBtn = props => (
-  <StyledBtn>
-    <FontAwesomeIcon icon="bars" />
-  </StyledBtn>
-)
+const Header = ({ siteTitle }) => {
+  const [isHidden, setIsHidden] = useState(true)
 
-const Header = ({ siteTitle }) => (
-  <HeaderWrapper>
-    <FlexDiv>
-      <StyledLink to="/">{siteTitle}</StyledLink>
-      <MenuBtn />
-    </FlexDiv>
-    <NavWrapper>
-      <Navigation />
-    </NavWrapper>
-  </HeaderWrapper>
-)
+  const handleMenuClick = () => setIsHidden(!isHidden)
+  return (
+    <HeaderWrapper>
+      <FlexDiv>
+        <StyledLink to="/">{siteTitle}</StyledLink>
+        <StyledBtn onClick={() => handleMenuClick()}>
+          <FontAwesomeIcon icon="bars" />
+        </StyledBtn>
+      </FlexDiv>
+      <NavWrapper hidden={isHidden} onClick={() => handleMenuClick()}>
+        <Navigation />
+      </NavWrapper>
+    </HeaderWrapper>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
