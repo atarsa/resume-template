@@ -7,6 +7,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 // components
 import Header from "../components/Header"
+import Sidebar from "../components/Sidebar"
 // Load typeface
 require("@openfonts/saira-semi-condensed_latin")
 require("typeface-open-sans")
@@ -46,7 +47,8 @@ const Layout = ({ children }) => (
     <GlobalStyle />
 
     <StyledWrapper>
-      <Header siteTitle="Jane Doe" />
+      <Header siteTitle="John Doe" />
+      <Sidebar />
       <main>{children}</main>
     </StyledWrapper>
   </ThemeProvider>

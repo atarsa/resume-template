@@ -6,8 +6,9 @@ import styled from "styled-components"
 import Navigation from "./Navigation"
 
 const HeaderWrapper = styled.header`
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   background: ${props => props.theme.primaryColor};
   padding: 1.5rem 2rem;
 
@@ -16,9 +17,7 @@ const HeaderWrapper = styled.header`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.large}) {
-    position: sticky;
-    left: 0;
-    height: 100vh;
+    display: none;
   }
 `
 
@@ -27,12 +26,10 @@ const FlexDiv = styled.div`
   justify-content: space-between;
   align-items: center;
 `
-const NavWrapper = styled.nav`
+const NavWrapper = styled.div`
   display: ${props => (props.hidden ? "none" : "flex")};
-  flex-direction: column;
-  padding: 1rem 0;
-  justify-content: space-between;
 `
+
 const StyledLink = styled(Link)`
   color: ${props => props.theme.colors.white};
   font-size: 2rem;
