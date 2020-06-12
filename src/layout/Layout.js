@@ -31,6 +31,15 @@ const GlobalStyle = createGlobalStyle`
 
   *, *::before, *::after{
     box-sizing: border-box;
+  }
+
+  main{
+    padding: 0 2rem;
+    max-width: 1200px;
+
+    @media (min-width: ${props => props.theme.breakpoints.medium}) {
+    padding-left: 3rem;
+    }
   } 
 `
 const StyledWrapper = styled.div`

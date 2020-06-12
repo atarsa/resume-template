@@ -1,25 +1,9 @@
 import React from "react"
 import Layout from "../layout/Layout"
-
+import About from "../components/About"
 const IndexPage = () => (
   <Layout>
-    
-    <h2 id="about"> About</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo enim labore
-      debitis repellendus doloribus explicabo, in molestiae vitae veritatis nisi
-      autem distinctio sed laudantium dolorem quis eius doloremque eos. In!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo enim labore
-      debitis repellendus doloribus explicabo, in molestiae vitae veritatis nisi
-      autem distinctio sed laudantium dolorem quis eius doloremque eos. In!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo enim labore
-      debitis repellendus doloribus explicabo, in molestiae vitae veritatis nisi
-      autem distinctio sed laudantium dolorem quis eius doloremque eos. In!
-    </p>
+    <About />
     <h2 id="experience"> Experience</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo enim labore

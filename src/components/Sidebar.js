@@ -33,7 +33,7 @@ function SideNavigation() {
   return (
     <SideNavigationWrapper>
       <StickyDiv>
-        <img src={ProfileImg} alt="John Doe' profile picture" />
+        <img src={ProfileImg} alt="John Doe" />
         <Navigation />
       </StickyDiv>
     </SideNavigationWrapper>
