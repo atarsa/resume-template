@@ -2,14 +2,14 @@ import React from "react"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+
 const StyledAbout = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 6rem;
-  height: 100vh;
+  min-height: 100vh;
   color: ${props => props.theme.colors.darkGrey};
+  background: aliceblue;
+  padding: 5rem 1rem;
 
   h1 {
     font-size: 10rem;
@@ -34,7 +34,6 @@ const StyledAbout = styled.section`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.large}) {
-    /* background: green; */
     padding-top: 16rem;
     justify-content: flex-start;
   }
@@ -42,7 +41,6 @@ const StyledAbout = styled.section`
 
 const IconsWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
 
   .fa-facebook-f,
   .fa-twitter,

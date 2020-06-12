@@ -26,7 +26,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6{
-    font-family: 'Saira Semi Condensed', sans-serif
+    font-family: 'Saira Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    
   }
 
   *, *::before, *::after{
@@ -35,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
 
   main{
     padding: 0 2rem;
-    max-width: 1200px;
+    max-width: 75rem;
 
     @media (min-width: ${props => props.theme.breakpoints.medium}) {
     padding-left: 3rem;
