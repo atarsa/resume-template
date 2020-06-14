@@ -2,14 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+import StyledSection from "./StyledSection"
 
-const StyledAbout = styled.section`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  color: ${props => props.theme.colors.darkGrey};
-  background: aliceblue;
-  padding: 5rem 1rem;
+const StyledAbout = styled(StyledSection)`
 
   h1 {
     font-size: 10rem;
