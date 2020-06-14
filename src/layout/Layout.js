@@ -5,6 +5,7 @@ import { theme } from "../styles/theme"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { faTrophy } from "@fortawesome/free-solid-svg-icons"
 // components
 import Header from "../components/Header"
 import Sidebar from "../components/Sidebar"
@@ -12,7 +13,7 @@ import Sidebar from "../components/Sidebar"
 require("@openfonts/saira-semi-condensed_latin")
 require("typeface-open-sans")
 
-library.add(fab, faBars)
+library.add(fab, faBars, faTrophy)
 const GlobalStyle = createGlobalStyle`
   html{
     font-size: 62.5%; /* Now 10px = 1rem! */
