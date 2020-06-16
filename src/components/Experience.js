@@ -1,15 +1,10 @@
 import React from "react"
-import styled from "styled-components"
 import YAMLData from "../content/experience.yaml"
 import StyledSection from "./styles/StyledSection"
-import {StyledH3, StyledH4} from './styles/StyledHeadings'
+import { StyledH3, StyledH4 } from "./styles/StyledHeadings"
 import Heading from "./Heading"
+import FlexContainer from "./styles/FlexContainer"
 
-
-const FlexContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-`
 const Job = ({ job }) => (
   <>
     <FlexContainer>

@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import styled from "styled-components"
 
-import StyledSection from "./StyledSection"
+import StyledSection from "./styles/StyledSection"
 import Heading from "./Heading"
 
 const StyledList = styled.ul`

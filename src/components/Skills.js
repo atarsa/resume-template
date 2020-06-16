@@ -3,7 +3,7 @@ import styled, { css } from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Heading from "./Heading"
-import StyledSection from "./StyledSection"
+import StyledSection from "./styles/StyledSection"
 
 const IconsWrapper = styled.div`
   margin-bottom: 2rem;
