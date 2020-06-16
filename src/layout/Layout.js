@@ -14,6 +14,7 @@ require("@openfonts/saira-semi-condensed_latin")
 require("typeface-open-sans")
 
 library.add(fab, faBars, faTrophy)
+
 const GlobalStyle = createGlobalStyle`
   html{
     font-size: 62.5%; /* Now 10px = 1rem! */
@@ -46,6 +47,11 @@ const GlobalStyle = createGlobalStyle`
     padding-left: 3rem;
     }
   } 
+
+  .orange{
+    color: ${props => props.theme.colors.orange};
+  }
+ 
 `
 const StyledWrapper = styled.div`
   display: grid;
