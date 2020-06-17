@@ -1,21 +1,21 @@
 import React from "react"
 import YAMLData from "../content/experience.yaml"
 import StyledSection from "./styles/StyledSection"
+import StyledItem from "./styles/StyledItem"
 import { StyledH3, StyledH4 } from "./styles/StyledHeadings"
 import Heading from "./Heading"
-import FlexContainer from "./styles/FlexContainer"
 
 const Job = ({ job }) => (
-  <>
-    <FlexContainer>
+  <StyledItem>
+    <div>
       <StyledH3>{job.role}</StyledH3>
-      <p className="orange">{job.timeline}</p>
-    </FlexContainer>
+      <StyledH4>{job.company}</StyledH4>
 
-    <StyledH4>{job.company}</StyledH4>
+      <p>{job.description}</p>
+    </div>
 
-    <p>{job.description}</p>
-  </>
+    <p className="orange timeline">{job.timeline}</p>
+  </StyledItem>
 )
 
 const Experience = () => {

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import StyledSection from "./styles/StyledSection"
 
 const StyledAbout = styled(StyledSection)`
-
+  padding-top: 16rem;
   h1 {
     font-size: 10rem;
     line-height: 10rem;
@@ -24,12 +24,8 @@ const StyledAbout = styled(StyledSection)`
   p {
     font-size: 1.8rem;
   }
-  .orange {
-    color: ${props => props.theme.primaryColor};
-  }
 
   @media (min-width: ${props => props.theme.breakpoints.large}) {
-    padding-top: 16rem;
     justify-content: flex-start;
   }
 `

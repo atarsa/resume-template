@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { useState } from "react"
 import styled from "styled-components"
 import Navigation from "./Navigation"
+import FlexContainer from "./styles/FlexContainer"
 
 const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   background: ${props => props.theme.primaryColor};
   padding: 1.5rem 2rem;
 
@@ -21,11 +22,6 @@ const HeaderWrapper = styled.header`
   }
 `
 
-const FlexDiv = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
 const NavWrapper = styled.div`
   display: ${props => (props.hidden ? "none" : "flex")};
 `
@@ -54,12 +50,12 @@ const Header = ({ siteTitle }) => {
   const handleMenuClick = () => setIsHidden(!isHidden)
   return (
     <HeaderWrapper>
-      <FlexDiv>
+      <FlexContainer>
         <StyledLink to="/">{siteTitle}</StyledLink>
         <StyledBtn onClick={() => handleMenuClick()}>
           <FontAwesomeIcon icon="bars" />
         </StyledBtn>
-      </FlexDiv>
+      </FlexContainer>
       <NavWrapper hidden={isHidden} onClick={() => handleMenuClick()}>
         <Navigation />
       </NavWrapper>

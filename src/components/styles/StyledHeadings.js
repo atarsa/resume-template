@@ -2,9 +2,10 @@ import styled from "styled-components"
 
 const StyledH2 = styled.h2`
   font-size: 6rem;
+  line-height: 6.5rem;
   margin: 4rem 0;
   color: ${props => props.theme.colors.black};
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.1rem;
 `
 
 const StyledH3 = styled.h3`

@@ -10,7 +10,8 @@ import { faTrophy } from "@fortawesome/free-solid-svg-icons"
 import Header from "../components/Header"
 import Sidebar from "../components/Sidebar"
 // Load typeface
-require("@openfonts/saira-semi-condensed_latin")
+// require("@openfonts/saira-semi-condensed_latin")
+require("@openfonts/saira-condensed_latin")
 require("typeface-open-sans")
 
 library.add(fab, faBars, faTrophy)
@@ -25,10 +26,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px; /* px fallback */
     font-size: 1.6rem; /* default font-size for document */
     line-height: 1.5; /* a nice line-height */
-  }
+    }
 
   h1, h2, h3, h4, h5, h6{
-    font-family: 'Saira Semi Condensed', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
     text-transform: uppercase;
     padding: 0;
     margin: 0;
@@ -41,12 +42,12 @@ const GlobalStyle = createGlobalStyle`
 
   main{
     padding: 0 2rem;
-    max-width: 75rem;
 
     @media (min-width: ${props => props.theme.breakpoints.medium}) {
     padding-left: 3rem;
+    max-width: 100rem;
     }
-  } 
+  }  
 
   .orange{
     color: ${props => props.theme.colors.orange};
@@ -54,10 +55,10 @@ const GlobalStyle = createGlobalStyle`
  
 `
 const StyledWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
+  width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.large}) {
+    display: grid;
     grid-template-columns: 25rem 1fr;
   }
 `
@@ -67,7 +68,7 @@ const Layout = ({ children }) => (
     <GlobalStyle />
 
     <StyledWrapper>
-      <Header siteTitle="John Doe" />
+      <Header siteTitle="Header" />
       <Sidebar />
       <main>{children}</main>
     </StyledWrapper>

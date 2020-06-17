@@ -1,21 +1,20 @@
 import React from "react"
 import YAMLData from "../content/education.yaml"
 import StyledSection from "./styles/StyledSection"
+import StyledItem from "./styles/StyledItem"
 import { StyledH3, StyledH4 } from "./styles/StyledHeadings"
-import FlexContainer from "./styles/FlexContainer"
 import Heading from "./Heading"
 
 const School = ({ school }) => (
-  <>
-    <FlexContainer>
+  <StyledItem>
+    <div>
       <StyledH3>{school.name}</StyledH3>
-      <p className="orange">{school.timeline}</p>
-    </FlexContainer>
+      <StyledH4>{school.degree}</StyledH4>
+      <p>{school.description}</p>
+    </div>
 
-    <StyledH4>{school.degree}</StyledH4>
-
-    <p>{school.description}</p>
-  </>
+    <p className="orange timeline">{school.timeline}</p>
+  </StyledItem>
 )
 
 const Education = () => {

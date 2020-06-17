@@ -11,6 +11,7 @@ const StyledList = styled.ul`
 
   li {
     list-style: none;
+    padding: 0.5rem 0;
   }
 `
 
