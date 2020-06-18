@@ -19,6 +19,7 @@ library.add(fab, faBars, faTrophy)
 const GlobalStyle = createGlobalStyle`
   html{
     font-size: 62.5%; /* Now 10px = 1rem! */
+    scroll-behavior: smooth;
   }
   body{
     font-family: 'Open Sans', sans-serif;
@@ -52,7 +53,10 @@ const GlobalStyle = createGlobalStyle`
   .orange{
     color: ${props => props.theme.colors.orange};
   }
- 
+  
+  .bg{
+    background: gold;
+  }
 `
 const StyledWrapper = styled.div`
   width: 100%;
