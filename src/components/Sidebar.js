@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Navigation from "./Navigation"
 import ProfileImg from "../images/profile.jpg"
 
-const SideNavigationWrapper = styled.section`
+const SideNavigationWrapper = styled.div`
   /* hide for small and medium devices */
   display: none;
   position: sticky;
@@ -31,7 +31,7 @@ const StickyDiv = styled.div`
 
 function SideNavigation() {
   return (
-    <SideNavigationWrapper>
+    <SideNavigationWrapper id="sidebar">
       <StickyDiv>
         <img src={ProfileImg} alt="John Doe" />
         <Navigation />

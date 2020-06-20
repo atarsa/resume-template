@@ -57,6 +57,10 @@ const GlobalStyle = createGlobalStyle`
   .bg{
     background: gold;
   }
+
+  .active {
+    color: ${props => props.theme.colors.white};
+  }
 `
 const StyledWrapper = styled.div`
   width: 100%;
