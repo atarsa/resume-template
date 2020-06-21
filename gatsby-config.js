@@ -4,6 +4,7 @@ module.exports = {
     description: `Resume Template. Design coded from https://startbootstrap.com/themes/resume/ `,
     author: `@atarsa`,
   },
+  pathPrefix: "/resume-template",
   plugins: [
     {
       resolve: `gatsby-plugin-styled-components`,
