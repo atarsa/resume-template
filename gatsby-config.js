@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Resume Template`,
+    description: `Resume Template. Design coded from https://startbootstrap.com/themes/resume/ `,
+    author: `@atarsa`,
   },
   plugins: [
-    
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -26,17 +25,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `resume-template`,
+        short_name: `resume`,
         start_url: `/`,
-        background_color: `#bd5d38`,
+        background_color: `#fff`,
         theme_color: `#bd5d38`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/fox.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

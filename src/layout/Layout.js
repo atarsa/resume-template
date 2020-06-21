@@ -9,8 +9,8 @@ import { faTrophy } from "@fortawesome/free-solid-svg-icons"
 // components
 import Header from "../components/Header"
 import Sidebar from "../components/Sidebar"
+import SEO from "../components/Seo"
 // Load typeface
-// require("@openfonts/saira-semi-condensed_latin")
 require("@openfonts/saira-condensed_latin")
 require("typeface-open-sans")
 
@@ -74,9 +74,9 @@ const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <Normalize />
     <GlobalStyle />
-
+    <SEO title="John Doe's Resume" />
     <StyledWrapper>
-      <Header siteTitle="Header" />
+      <Header siteTitle="John Doe" />
       <Sidebar />
       <main>{children}</main>
     </StyledWrapper>

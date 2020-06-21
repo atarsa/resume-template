@@ -52,7 +52,7 @@ const Header = ({ siteTitle }) => {
     <HeaderWrapper>
       <FlexContainer>
         <StyledLink to="/">{siteTitle}</StyledLink>
-        <StyledBtn onClick={() => handleMenuClick()}>
+        <StyledBtn onClick={() => handleMenuClick()} aria-label="menu">
           <FontAwesomeIcon icon="bars" />
         </StyledBtn>
       </FlexContainer>

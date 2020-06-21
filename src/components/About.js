@@ -64,16 +64,16 @@ function About() {
         proposition.
       </p>
       <IconsWrapper>
-        <a href="#">
+        <a href="/">
           <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
         </a>
-        <a href="#">
+        <a href="/">
           <FontAwesomeIcon icon={["fab", "github"]} />
         </a>
-        <a href="#">
+        <a href="/">
           <FontAwesomeIcon icon={["fab", "twitter"]} />
         </a>
-        <a href="#">
+        <a href="/">
           <FontAwesomeIcon icon={["fab", "facebook-f"]} />
         </a>
       </IconsWrapper>
